@@ -1,0 +1,48 @@
+[
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$XJYVtOXFQgD7$p33qIEbNu4L+BCaaAmdnJitZqCML1h/gVqy3bsCbSg0=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "Mark",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-05-29T12:41:34.347Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "assets.asset",
+    "pk": 1,
+    "fields": {
+        "name": "Flex 3 14",
+        "price": "750.00",
+        "vendor": "Lenovo",
+        "last_modified": "2020-05-29T12:51:16.405Z",
+        "description": "Laptop from Lenovo company",
+        "type": "laptop",
+        "status": "stolen",
+        "owner": 1
+    }
+},
+{
+    "model": "assets.asset",
+    "pk": 2,
+    "fields": {
+        "name": "Air 15",
+        "price": "1300.00",
+        "vendor": "Apple",
+        "last_modified": "2020-05-29T12:53:49.214Z",
+        "description": "Laptop from Apple company",
+        "type": "laptop",
+        "status": "assigned",
+        "owner": 1
+    }
+}
+]

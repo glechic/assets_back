@@ -27,6 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+FIXTURE_DIRS = [
+    'fixtures/',
+]
+
 
 # Application definition
 
