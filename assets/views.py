@@ -41,7 +41,7 @@ class RequestViewSet(viewsets.ModelViewSet):
         serializer = self.serializer_class(res)
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
-    def destroy(self, request):
+    def destroy(self, request, *args, **kwargs):
         instance = self.get_object()
         asset = instance.asset
         asset.status = Asset.ASSIGNED
