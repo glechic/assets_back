@@ -3,16 +3,16 @@
     "model": "auth.user",
     "pk": 1,
     "fields": {
-        "password": "pbkdf2_sha256$180000$XJYVtOXFQgD7$p33qIEbNu4L+BCaaAmdnJitZqCML1h/gVqy3bsCbSg0=",
+        "password": "pbkdf2_sha256$180000$hdhQfSHJOavT$rad/YGqsEPPVP8MXhCnDWTdR3gqDhDojciD1nn/UAUk=",
         "last_login": null,
         "is_superuser": false,
-        "username": "Mark",
+        "username": "admin",
         "first_name": "",
         "last_name": "",
         "email": "",
         "is_staff": false,
         "is_active": true,
-        "date_joined": "2020-05-29T12:41:34.347Z",
+        "date_joined": "2020-06-02T19:37:26.120Z",
         "groups": [
             1
         ],
@@ -20,39 +20,113 @@
     }
 },
 {
-    "model": "auth.user_groups",
-    "pk": 1,
+    "model": "auth.user",
+    "pk": 2,
     "fields": {
-        "user": 1,
-        "group": 1
+        "password": "pbkdf2_sha256$180000$SBQV9D3DEmC2$kvk6GlwVdT4UTXIOk3jPk+34VTjYVJ7JtkCkatbXOBA=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "john",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-06-02T19:40:40.564Z",
+        "groups": [
+            2
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$7QpmYOAncxNd$6PWN6HbcSJ8ftggiD30hb6+6BrHrzORau+l+w0himXk=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "mark",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-06-02T19:40:55.460Z",
+        "groups": [
+            2
+        ],
+        "user_permissions": []
     }
 },
 {
     "model": "assets.asset",
     "pk": 1,
     "fields": {
-        "name": "Flex 3 14",
-        "price": "750.00",
-        "vendor": "Lenovo",
-        "last_modified": "2020-05-29T12:51:16.405Z",
-        "description": "Laptop from Lenovo company",
-        "type": "laptop",
-        "status": "stolen",
-        "owner": 1
+        "name": "IPhone X",
+        "price": "900.00",
+        "vendor": "Apple",
+        "last_modified": "2020-06-02T20:24:33.946Z",
+        "description": "Phone with cool camera",
+        "type": "P",
+        "status": "A",
+        "owner": 2
     }
 },
 {
     "model": "assets.asset",
     "pk": 2,
     "fields": {
-        "name": "Air 15",
-        "price": "1300.00",
+        "name": "MacBook Air",
+        "price": "1200.00",
         "vendor": "Apple",
-        "last_modified": "2020-05-29T12:53:49.214Z",
-        "description": "Laptop from Apple company",
-        "type": "laptop",
-        "status": "assigned",
-        "owner": 1
+        "last_modified": "2020-06-02T20:24:33.946Z",
+        "description": "Pretty thin laptop",
+        "type": "L",
+        "status": "A",
+        "owner": 3
+    }
+},
+{
+    "model": "assets.asset",
+    "pk": 3,
+    "fields": {
+        "name": "Hoegaarden",
+        "price": "2.00",
+        "vendor": "Hoegaarden Brewery",
+        "last_modified": "2020-06-02T20:24:33.946Z",
+        "description": "Belgian wheat bear",
+        "type": "O",
+        "status": "R",
+        "owner": null
+    }
+},
+{
+    "model": "assets.asset",
+    "pk": 4,
+    "fields": {
+        "name": "Chair",
+        "price": "30.00",
+        "vendor": "IKEA ",
+        "last_modified": "2020-06-02T20:39:00.655Z",
+        "description": "Just a chair",
+        "type": "O",
+        "status": "A",
+        "owner": 2
+    }
+},
+{
+    "model": "assets.asset",
+    "pk": 5,
+    "fields": {
+        "name": "Notebook",
+        "price": "1.00",
+        "vendor": "Tree",
+        "last_modified": "2020-06-02T20:39:00.656Z",
+        "description": "Yea, notebook (i'm tired)",
+        "type": "O",
+        "status": "A",
+        "owner": 3
     }
 }
 ]
