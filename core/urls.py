@@ -29,6 +29,6 @@ urlpatterns = [
 
     # auth endpoints
     path('token/', CustomTokenObtainPairView.as_view(), name='tokem_obtain_pair'),
-    path('token/refresh', TokenRefreshView.as_view(), name='tokem_refresh'),
-    path('token/verify', TokenVerifyView.as_view(), name='tokem_verify'),
+    path('token/refresh/', TokenRefreshView.as_view(), name='tokem_refresh'),
+    path('token/verify/', TokenVerifyView.as_view(), name='tokem_verify'),
 ]

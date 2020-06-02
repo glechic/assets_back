@@ -43,10 +43,16 @@ class Asset(models.Model):
     status = models.CharField(max_length=1, choices=STATUS)
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
 
+    def __str__(self):
+        return self.name
+
 
 class Request(models.Model):
     title = models.CharField(max_length=64)
     description = models.CharField(max_length=512)
     asset = models.ForeignKey(Asset, on_delete=models.CASCADE)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.title
 
