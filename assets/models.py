@@ -41,7 +41,7 @@ class Asset(models.Model):
     description = models.CharField(max_length=512)
     type = models.CharField(max_length=1, choices=TYPE)
     status = models.CharField(max_length=1, choices=STATUS)
-    owner = models.ForeignKey(User, on_delete=models.CASCADE)
+    owner = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
 
     def __str__(self):
         return self.name
