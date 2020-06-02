@@ -31,6 +31,12 @@ class RequestViewSet(viewsets.ModelViewSet):
             'description': f'Asset <{asset.name}> requested to {type}',
         } )
         res.save()
+        types_dict = {
+            'repair': Asset.ON_REPAIR,
+            'service': Asset.ON_REPAIR,
+            'upgrade': Asset.RETIRED,
+        }
+        asset.status = types_dict[type]
+        asset.save()
         serializer = self.serializer_class(res)
         return Response(serializer.data, status=status.HTTP_201_CREATED)
-        #return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
